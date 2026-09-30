@@ -1,0 +1,22 @@
+{
+  "id": "3f6c2a9e-8b41-4d7a-9c25-1e7b0d4f8a63",
+  "name": "APAS API-05 Sincronizacion Comercial",
+  "publisher": "DSM Solutions",
+  "version": "1.0.0.0",
+  "brief": "API-05: sincronizacion comercial BC -> API CONNECT -> CORE (Sales Quote / Sales Order).",
+  "description": "Expone los hitos comerciales de las Sales Quote asociadas a una WO de CORE (Estado Cot. APAS y creacion del Sales Order) mediante una API de eventos con confirmacion de recepcion.",
+  "dependencies": [],
+  "platform": "1.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "runtime": "14.0",
+  "target": "Cloud",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

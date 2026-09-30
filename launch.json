@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Sandbox APAS",
+      "type": "al",
+      "request": "launch",
+      "environmentType": "Sandbox",
+      "environmentName": "Sandbox-Prueba",
+      "tenant": "TU_TENANT_ID",
+      "startupObjectId": 22,
+      "schemaUpdateMode": "Synchronize"
+    }
+  ]
+}
