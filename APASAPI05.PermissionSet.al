@@ -10,5 +10,6 @@ permissionset 50100 "APAS API05"
         tabledata "Sales Line" = R,
         page "APAS Quote Status Event API" = X,
         page "APAS Sales Quote API" = X,
+        page "APAS Sales Order API" = X,
         codeunit "APAS Quote Event Mgt." = X;
 }
