@@ -1,7 +1,9 @@
-// API de consulta (foto actual) para conciliacion: estado vigente de las Quotes con WO.
-// GET .../api/dsm/apas/v1.0/companies({companyId})/apasSalesQuotes?$filter=woNumber eq 'WO-000123'
-// Nota: una Quote convertida a Sales Order desaparece de aqui (BC la elimina);
-// ese hito queda en quoteStatusEvents (eventType = SalesOrderCreated).
+// API PRINCIPAL del enfoque "copia y comparacion": estado vigente de las Quotes con WO.
+// GET .../api/dsm/apas/v1.0/companies({companyId})/apasSalesQuotes({id})
+// Webhook: POST .../api/dsm/apas/v1.0/subscriptions con resource
+//          "api/dsm/apas/v1.0/companies({companyId})/apasSalesQuotes" (changeType updated / deleted)
+// Nota: una Quote convertida a Sales Order desaparece de aqui (BC la elimina, aviso "deleted");
+// la conversion se detecta en apasSalesOrders (quoteNumber / woNumber).
 page 50101 "APAS Sales Quote API"
 {
     PageType = API;
